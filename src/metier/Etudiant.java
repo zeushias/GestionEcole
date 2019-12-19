@@ -2,21 +2,21 @@ package metier;
 
 public class Etudiant {
 
-	private int numE;
+	private String numE;
 	private String nomE;
 	private String prenomE;
 	private Ecole ecole;
 		
-	public Etudiant(int numE, String nomE, String prenomE) {
+	public Etudiant(String numE, String nomE, String prenomE) {
 		this.numE = numE;
 		this.nomE = nomE;
 		this.prenomE = prenomE;
 	}
 	
-	public int getNumE() {
+	public String getNumE() {
 		return numE;
 	}
-	public void setNumE(int numE) {
+	public void setNumE(String numE) {
 		this.numE = numE;
 	}
 	public String getNomE() {
