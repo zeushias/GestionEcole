@@ -13,6 +13,5 @@ public class Etudiant extends Personne{
 	public boolean inscrire() {
 		return true;
 	}
-
 		
 }

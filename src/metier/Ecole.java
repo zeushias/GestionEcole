@@ -3,7 +3,6 @@ package metier;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 import java.util.Map.Entry;
 
 public class Ecole {
@@ -45,7 +44,7 @@ public class Ecole {
 		return etudiants;
 	}
 	public void inscription(HashMap<String, Etudiant> map,Etudiant e){
-		map.put(this.nomEcole, e);
+		map.put(this.nomEcole, e);	
 	}
 
 	@Override
