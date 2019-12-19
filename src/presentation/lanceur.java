@@ -6,7 +6,7 @@ import metier.Etudiant;
 public class Lanceur {
 
 	public static void main(String[] args) {
-		// deux étudiants
+		// deux etudiants
 		
 		Etudiant etudiant = new Etudiant("1", "BA", "Fatima");
 		Etudiant etudiant2 = new Etudiant("2", "DANON", "Kodzo");
