@@ -6,12 +6,12 @@ import metier.Etudiant;
 public class lanceur {
 
 	public static void main(String[] args) {
-		// deux étudiants
+		// deux Ã©tudiants
 		
-		Etudiant etudiant = new Etudiant(1, "BA", "Fatima");
-		Etudiant etudiant2 = new Etudiant(2, "DANON", "Kodzo");
+		Etudiant etudiant = new Etudiant("1", "BA", "Fatima");
+		Etudiant etudiant2 = new Etudiant("2", "DANON", "Kodzo");
 		
-		// deux écoles
+		// deux Ã©coles
 		
 		Ecole ecole = new Ecole("Ensup", "Guyancourt");
 		ecole.getEtudiants().add(etudiant);
