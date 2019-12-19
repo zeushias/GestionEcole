@@ -2,34 +2,34 @@ package metier;
 
 public class Etudiant {
 
-	private String numE;
-	private String nomE;
-	private String prenomE;
+	private String numEtudiant;
+	private String nomEtudiant;
+	private String prenomEtudiant;
 	private Ecole ecole;
 		
 	public Etudiant(String numE, String nomE, String prenomE) {
-		this.numE = numE;
-		this.nomE = nomE;
-		this.prenomE = prenomE;
+		this.numEtudiant = numE;
+		this.nomEtudiant = nomE;
+		this.prenomEtudiant = prenomE;
 	}
 	
-	public String getNumE() {
-		return numE;
+	public String getNumEtudiant() {
+		return numEtudiant;
 	}
-	public void setNumE(String numE) {
-		this.numE = numE;
+	public void setNumEtudiant(String numE) {
+		this.numEtudiant = numE;
 	}
-	public String getNomE() {
-		return nomE;
+	public String getNomEtudiant() {
+		return nomEtudiant;
 	}
-	public void setNomE(String nomE) {
-		this.nomE = nomE;
+	public void setNomEtudiant(String nomE) {
+		this.nomEtudiant = nomE;
 	}
-	public String getPrenomE() {
-		return prenomE;
+	public String getPrenomEtudiant() {
+		return prenomEtudiant;
 	}
-	public void setPrenomE(String prenomE) {
-		this.prenomE = prenomE;
+	public void setPrenomEtudiant(String prenomE) {
+		this.prenomEtudiant = prenomE;
 	}
 	
 	public Ecole getEcole() {
@@ -39,9 +39,20 @@ public class Etudiant {
 	public void setEcole(Ecole ecole) {
 		this.ecole = ecole;
 	}
+	
+	public String faireExamen() {
+		return nomEtudiant + " a fait un examen" ;
+	}
+	
+	public boolean inscrire() {
+		if (this.getEcole() == null) {
+			return false;
+		}
+		return true;
+	}
 
 	@Override
 	public String toString() {
-		return "Etudiant [numE=" + numE + ", nomE=" + nomE + ", prenomE=" + prenomE + "]";
+		return "Etudiant [numEtudiant=" + numEtudiant + ", nomEtudiant=" + nomEtudiant + ", prenomEtudiant=" + prenomEtudiant + "]";
 	}	
 }

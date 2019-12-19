@@ -5,31 +5,33 @@ import java.util.List;
 
 public class Ecole {
 
-	private String nomEc;
-	private String adresseEc;
+	private String nomEcole;
+	private String adresseEcole;
 	private List<Etudiant> etudiants = new ArrayList<Etudiant>();
-		
-	public Ecole(String nomEc, String adresseEc) {
-		this.nomEc = nomEc;
-		this.adresseEc = adresseEc;
-	}
-
-	public String getNomEc() {
-		return nomEc;
-	}
-
-	public void setNomEc(String nomEc) {
-		this.nomEc = nomEc;
-	}
-
-	public String getAdresseEc() {
-		return adresseEc;
-	}
-
-	public void setAdresseEc(String adresseEc) {
-		this.adresseEc = adresseEc;
-	}
 	
+	
+	public Ecole(String nomEcole, String adresseEcole) {
+		super();
+		this.nomEcole = nomEcole;
+		this.adresseEcole = adresseEcole;
+	}
+
+	public String getNomEcole() {
+		return nomEcole;
+	}
+
+	public void setNomEcole(String nomEcole) {
+		this.nomEcole = nomEcole;
+	}
+
+	public String getAdresseEcole() {
+		return adresseEcole;
+	}
+
+	public void setAdresseEcole(String adresseEcole) {
+		this.adresseEcole = adresseEcole;
+	}
+
 	public List<Etudiant> getEtudiants() {
 		return etudiants;
 	}
@@ -40,6 +42,8 @@ public class Ecole {
 
 	@Override
 	public String toString() {
-		return "Ecole [nomEc=" + nomEc + ", adresseEc=" + adresseEc + "]";
+		return "Ecole [nomEcole=" + nomEcole + ", adresseEcole=" + adresseEcole + "]";
 	}
+		
+	
 }

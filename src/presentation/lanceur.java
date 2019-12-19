@@ -3,19 +3,32 @@ package presentation;
 import metier.Ecole;
 import metier.Etudiant;
 
-public class lanceur {
+public class Lanceur {
 
 	public static void main(String[] args) {
 		// deux étudiants
 		
-		Etudiant etudiant = new Etudiant(1, "BA", "Fatima");
-		Etudiant etudiant2 = new Etudiant(2, "DANON", "Kodzo");
+		Etudiant etudiant = new Etudiant("1", "BA", "Fatima");
+		Etudiant etudiant2 = new Etudiant("2", "DANON", "Kodzo");
 		
-		// deux écoles
+		//inscrire
+		
+		// faire examen
+		etudiant.faireExamen();
+		
+		//  écoles
 		
 		Ecole ecole = new Ecole("Ensup", "Guyancourt");
-		ecole.getEtudiants().add(etudiant);
-		ecole.getEtudiants().add(etudiant2);
+		if(!etudiant.inscrire()) {
+			ecole.getEtudiants().add(etudiant) ;
+			etudiant.setEcole(ecole);
+		}
+		
+		if(!etudiant2.inscrire()) {
+			ecole.getEtudiants().add(etudiant2) ;
+			etudiant2.setEcole(ecole);
+		}
+		
 		// 
 		
 		System.out.println(ecole.toString());
