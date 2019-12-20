@@ -2,39 +2,31 @@ package metier;
 
 public class Personne {
 
-	private String numPersonne;
-	private String nomPersonne;
-	private String prenomPersonne;
-		
-	public Personne(String numPersonne, String nomPersonne, String prenomPersonne) {
+	private String nom;
+	private String prenom;
+	
+	public Personne(String nom, String prenom) {
 		super();
-		this.numPersonne = numPersonne;
-		this.nomPersonne = nomPersonne;
-		this.prenomPersonne = prenomPersonne;
+		this.nom = nom;
+		this.prenom = prenom;
 	}
 	
-	public String getNumPersonne() {
-		return numPersonne;
+		public String getNom() {
+		return nom;
 	}
-	public void setNumPersonne(String numPersonne) {
-		this.numPersonne = numPersonne;
+	public void setNom(String nom) {
+		this.nom = nom;
 	}
-	public String getNomPersonne() {
-		return nomPersonne;
+	public String getPrenom() {
+		return prenom;
 	}
-	public void setNomPersonne(String nomPersonne) {
-		this.nomPersonne = nomPersonne;
+	public void setPrenom(String prenom) {
+		this.prenom = prenom;
 	}
-	public String getPrenomPersonne() {
-		return prenomPersonne;
-	}
-	public void setPrenomPersonne(String prenomPersonne) {
-		this.prenomPersonne = prenomPersonne;
-	}
+
 	@Override
 	public String toString() {
-		return "Personne [numPersonne=" + numPersonne + ", nomPersonne=" + nomPersonne + ", prenomPersonne="
-				+ prenomPersonne + "]";
+		return "Personne [nom=" + nom + ", prenom=" + prenom + "]";
 	}
 
 }
