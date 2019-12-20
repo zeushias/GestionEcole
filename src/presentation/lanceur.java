@@ -26,18 +26,13 @@ public class Lanceur {
 		
 		Ecole ecole = new Ecole("Ensup", "Guyancourt");
 		
+		List<Etudiant> listEtudiants = new ArrayList<Etudiant>();
+		listEtudiants.add(etudiant1);
+		listEtudiants.add(etudiant2);
 		
-		
-		
-		List<Etudiant> listetudiants = new ArrayList<Etudiant>();
-		listetudiants.add(etudiant1);
-		listetudiants.add(etudiant2);
-		
-		
+		ecole.listeEtudiants(listEtudiants);
 		System.out.println("etudiant inscrit à l'ecole " +ecole.getNomEcole());
-		for(Etudiant etudiant : listetudiants) {
-			System.out.println(etudiant);
-		}		
+		
 	}
 
 }

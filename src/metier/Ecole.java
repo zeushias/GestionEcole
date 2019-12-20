@@ -33,15 +33,11 @@ public class Ecole {
 		this.adresseEcole = adresseEcole;
 	}
 	
-	public List<Etudiant> listeEtudiants(HashMap<String, Etudiant> liste) {
+	public void listeEtudiants(List<Etudiant> listEtudiant) {
 		List<Etudiant> etudiants = new ArrayList<Etudiant>();
-		for (Entry<String, Etudiant> entry : liste.entrySet()) {
-			String test = entry.getKey();
-			if(this.nomEcole.matches(test)) {
-				etudiants.add(entry.getValue());
-			}
+		for(Etudiant etudiant : listEtudiant) {
+			System.out.println(etudiant);
 		}
-		return etudiants;
 	}
 	public void inscription(HashMap<String, Etudiant> map,Etudiant e){
 		map.put(this.nomEcole, e);	
